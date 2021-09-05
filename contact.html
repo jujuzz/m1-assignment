@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <img src="images/dog5.jpg" alt="cute kittens" width="1420" height="584">
+                <div class="main-header">
+                    <div class="mian-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="adoption.html">Adoption</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        
+        <main>
+            <h1>Contacting Us</h1>
+            <p>If you want to adopt a pet, please submit the contact form, we will be getting back to you shortly. Thank you!</p>
+            <h2>Fill Out This Form:</h2>
+            <form action="/contact" method="POST">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <label>Enter your full name</label><br>
+                <input type="text" name="name"><br>
+                <label>Enter your email</label><br>
+                <input type="email" name="email"><br>
+                <label>Enter your phone</label><br>
+                <input type="phone" name="phone"><br>
+                <br><label>Do you want to adopt a cat or a dog?</label><br>
+                <input type="radio" name="pet" value="Cat" />Cat
+                <input type="radio" name="pet" value="Dog" />Dog <br/>
+                <br><label>Which adoptable pet are you interested in?</label><br>
+                <select>
+                    <option>Tara</option>
+                    <option>Lily</option>
+                    <option>Elsa</option>
+                    <option>Ben</option>
+                    <option>Ken</option>
+                    <option>Bruce</option>
+                </select><br>
+                <br>How did you hear about us:<br>
+                <textarea rows="2" cols="20"></textarea><br>
+                <input type="submit" value="Inquire">
+            </fieldset>
+            </form>
+        </main>
+
+        <footer>
+            <div id="nondisclaimer">
+                <div class="copy">
+                    &copy;Copyright 2021 :: Seattle Pet Adoption Center
+                </div>
+            </div>
+            <div id="disclaimer">
+                <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+            </div>
+        </footer>
+    
+    </div>
+</body>
+</html>
