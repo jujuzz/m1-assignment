@@ -42,6 +42,9 @@ header {
 main {
     font-family: Arial, Helvetica, sans-serif;
 }
+main h1 {
+    color:lightpink;
+}
 main h2 {
     color: #1F86DE;
 }
@@ -72,7 +75,7 @@ footer {
     width: 100%;
     height: 165px;
     padding-bottom: 1em;
-    background-color: #ecfab8;
+    background-color:lightgoldenrodyellow;
 }
 footer #nondisclaimer .copy {
     padding: 3.5em 3.5em 3.5em 13em;
@@ -84,4 +87,48 @@ footer #disclaimer {
 footer #disclaimer p {
     font-size: 0.85em;
     text-align: center;
+}
+table {
+    margin-top: 35px;
+}
+table, caption, th, td {
+    border: 1px solid #000;
+}
+th, td {
+    width: 150px;
+    height: 35px;
+    text-align: center;
+}
+caption {
+    text-transform: uppercase;
+    font-weight: 600;
+    height: 40px;
+    padding-top: 15px;
+    color:darkolivegreen;
+}
+label {
+    display: block;
+    margin: 15px 0 0 0;
+}
+input, textarea {
+    width: 300px;
+}
+input[type="radio"] {
+    width: 25px;
+}
+input[type="submit"] {
+    display: block;
+    margin: 20px 0 10px 0;
+    width: 100px;
+    background-color:violet;
+    border:none;
+    padding: 7px;
+    color: #fff;
+
+}
+fieldset {
+    border: 4px solid powderblue;
+}
+legend {
+    font-size: larger;
 }
