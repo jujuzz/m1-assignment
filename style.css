@@ -70,26 +70,26 @@ main h1 {
 main h2 {
     color: #1F86DE;
 }
-section {
-    width: 100%;
-    background-color:mistyrose;
-
+#home main .pets {
+    width: 90%;
+    margin: 3em auto;
 }
-section #pets {
-    width: 1200px;
-    padding: 2em 0 2em 0;
-    margin: 10px 8px;
-    text-align: center;
-}
-section #pets .pet {
+#home main .pets .pet {
+    width: 35%;
     display: inline-block;
-    margin: 2em 2em;
-    padding: 1.3em 1.5em;
-    background-color: #fff;
+    margin: 2.5em 1.2em 0 1.2em;
 }
-section #pets .pet img {
-    width: 100px;
-    height: 100px;
+#home main .pets .pet p {
+    background: pink;
+    height: 2em;
+    color: #fff;
+    text-align: center;
+    padding-top: 0.55em;
+    margin: 0;
+}
+#home main .pets .pet img{
+    width: 100%;
+    height: 100%;
 }
 /* Footer */
 footer {
@@ -140,7 +140,6 @@ footer #nondisclaimer .social .fa-twitter {
 }
 /* Adoption */
 table {
-    /* margin-top: 35px; */
     margin: 35px auto;
 }
 table, caption, th, td {
@@ -157,6 +156,10 @@ caption {
     height: 40px;
     padding-top: 15px;
     color:plum;
+}
+/* CONTACT */
+form {
+    margin: 35px auto;
 }
 label {
     display: block;
