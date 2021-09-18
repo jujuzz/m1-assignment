@@ -7,7 +7,7 @@ header {
     margin: 10px 20px;
 }
 #home header{
-    background: no-repeat url(images/dog5.jpg);
+    background: no-repeat url(images/dog1.jpg);
     background-size: 1400px 600px;
 }
 #adoption header{
@@ -15,7 +15,7 @@ header {
     background-size: 1400px 600px;
 }  
 #contact header{
-    background: no-repeat url(images/dog1.jpg);
+    background: no-repeat url(images/dog5.jpg);
     background-size: 1400px 600px;
 }
 /* Main */
@@ -25,12 +25,15 @@ header {
     margin: 1em auto 0 auto;
     min-height: 50px;
     height: 70px;
-    overflow: auto;
+    /* overflow: auto; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    align-items: center;
 }
 .main-header .logo img {
     width: 120px;
     height: 80px;
-    float:left;
+    float: left;
 }
 .main-menu {
     font-weight: 400;
@@ -72,7 +75,7 @@ main h2 {
 }
 #home main .pets {
     width: 90%;
-    margin: 3em auto;
+    margin:1em 13em;
 }
 #home main .pets .pet {
     width: 35%;
