@@ -55,8 +55,8 @@ function showAlbum() {
 //     document.getElementById("infobox").style.visibility="visible";
 //     document.getElementById("infobox-heading").innerHTML = captionList[i];
 //     document.getElementById("infobox-text").innerHTML = infoBoxText[i];
-//     document.getElementById("closeBox").innerHTML = "Click Here to Close";
-//     document.getElementById("closeBox").addEventListener("click", closeInfoBox);
+//     document.getElementById("closebox").innerHTML = "Click Here to Close";
+//     document.getElementById("closebox").addEventListener("click", closeInfoBox);
 // }
 
 function showInfoBox() {
@@ -66,8 +66,8 @@ function showInfoBox() {
             document.getElementById("infobox").style.visibility="visible";
             document.getElementById("infobox-heading").innerHTML = captionList[i];
             document.getElementById("infobox-text").innerHTML = infoBoxText[i];
-            document.getElementById("closeBox").innerHTML = "Click Here to Close";
-            document.getElementById("closeBox").addEventListener("click", closeInfoBox);
+            document.getElementById("closebox").innerHTML = "Click Here to Close";
+            document.getElementById("closebox").addEventListener("click", closeInfoBox);
         });
     }
 };
