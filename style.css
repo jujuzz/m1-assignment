@@ -225,11 +225,9 @@ li:hover .description {
     background-color: plum;
 }
 #infobox-heading {
-    text-align: left;
     color: whitesmoke;
 }
 #infobox-text {
-    text-align: left;
     font-size: large;
     color: whitesmoke;
 }
@@ -237,6 +235,5 @@ li:hover .description {
     font-size: larger;
     margin: auto 90px;
     text-decoration: none;
-    justify-content: center;
     color:yellow;
 }

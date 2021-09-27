@@ -50,7 +50,7 @@ function showAlbum() {
 
 /* info box */
 
-// const desc_index = document.querySelectorAll(".description");
+// var desc = document.querySelectorAll(".description");
 // function infoBox(i) {
 //     document.getElementById("infobox").style.visibility="visible";
 //     document.getElementById("infobox-heading").innerHTML = captionList[i];
