@@ -5,6 +5,8 @@ var imageList = [];
 var openList ="<li class='photo'>";
 var closeList ="</li>";
 const captionList = ["Elsa", "Tara", "Coco", "Kimchi & Yaki", "Doris", "Ice", "Momo", "Bubble", "Sakura", "Alpha", "Mont", "Huno"];
+var openLightbox = '<a href="#/" class="lightbox-toggle">';
+var closeLightbox = "</a>";
 var openCaption = "<div class='caption'>";
 var closeCaption = "</div>";
 var openDescTag = "<p class='description'>";
@@ -42,23 +44,13 @@ function showAlbum() {
     for(var i = 0; i < 12; i++){
         fileNames.push("pet" + (i + 1));
         photos.push("<img src='images/" + fileNames[i] + ".jpg'>");
-        image = openList + photos[i] + openCaption + captionList[i] + openDescTag + descList[i] + closeDescTag + closeCaption + closeList;
+        image = openList + openLightbox + photos[i] + closeLightbox + openCaption + captionList[i] + openDescTag + descList[i] + closeDescTag + closeCaption + closeList;
         imageList.push(image);
     }
     document.getElementById("album").innerHTML = imageList.join('');
 };
 
 /* info box */
-
-// var desc = document.querySelectorAll(".description");
-// function infoBox(i) {
-//     document.getElementById("infobox").style.visibility="visible";
-//     document.getElementById("infobox-heading").innerHTML = captionList[i];
-//     document.getElementById("infobox-text").innerHTML = infoBoxText[i];
-//     document.getElementById("closebox").innerHTML = "Click Here to Close";
-//     document.getElementById("closebox").addEventListener("click", closeInfoBox);
-// }
-
 function showInfoBox() {
     var desc = document.querySelectorAll(".description");
     for (let i = 0; i < desc.length; i++) {
@@ -75,6 +67,25 @@ function showInfoBox() {
 function closeInfoBox() {
     document.getElementById("infobox").style.visibility = "hidden";
 }
+
+/* light box */
+$(document).ready(function() {
+    $('.lightbox-toggle img').click(function(){
+        $('.backdrop').animate({'opacity':'.50'}, 300, 'linear').css('display', 'block');
+        $('.box').fadeIn();
+        if ($('.box').contents('img')) {
+            $('.box').contents().remove('img');
+        }
+        var img = $(this).clone();
+        $('.box').append(img);
+    });
+    $('.close, .backdrop').click(function(){
+        $('.backdrop').animate({'opacity':'0'}, 300, 'linear', function(){
+            $('.backdrop').css('display', 'none');
+        });
+        $('.box').fadeOut();
+    });
+});
 
 showAlbum();
 showInfoBox();
